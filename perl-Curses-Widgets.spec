@@ -22,8 +22,8 @@ Summary(sv):	Curses::Widgets Perlmodul
 Summary(uk):	Модуль для Perl Curses::Widgets
 Summary(zh_CN):	Curses::Widgets Perl дё©И
 Name:		perl-Curses-Widgets
-Version:	1.992
-Release:	2
+Version:	1.997
+Release:	1
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
