@@ -1,15 +1,30 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_demo - perform "make test" (it IS just demo!)
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Curses
-%define	pnam	Widgets
-Summary:	Curses::Widgets perl module
-Summary(pl):	Modu³ perla Curses::Widgets
-Name:		perl-%{pdir}-%{pnam}
+%define		pdir	Curses
+%define		pnam	Widgets
+Summary:	Curses::Widgets Perl module
+Summary(cs):	Modul Curses::Widgets pro Perl
+Summary(da):	Perlmodul Curses::Widgets
+Summary(de):	Curses::Widgets Perl Modul
+Summary(es):	Módulo de Perl Curses::Widgets
+Summary(fr):	Module Perl Curses::Widgets
+Summary(it):	Modulo di Perl Curses::Widgets
+Summary(ja):	Curses::Widgets Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Curses::Widgets ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Curses::Widgets
+Summary(pl):	Modu³ Perla Curses::Widgets
+Summary(pt):	Módulo de Perl Curses::Widgets
+Summary(pt_BR):	Módulo Perl Curses::Widgets
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Curses::Widgets
+Summary(sv):	Curses::Widgets Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Curses::Widgets
+Summary(zh_CN):	Curses::Widgets Perl Ä£¿é
+Name:		perl-Curses-Widgets
 Version:	1.992
-Release:	1
-License:	GPL
+Release:	2
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.0.2-56
@@ -30,7 +45,7 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 %build
 perl Makefile.PL
 %{__make}
-%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
