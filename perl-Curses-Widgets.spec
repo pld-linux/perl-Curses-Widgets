@@ -5,23 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Curses
 %define		pnam	Widgets
-Summary:	Curses::Widgets Perl module
-Summary(cs):	Modul Curses::Widgets pro Perl
-Summary(da):	Perlmodul Curses::Widgets
-Summary(de):	Curses::Widgets Perl Modul
-Summary(es):	Módulo de Perl Curses::Widgets
-Summary(fr):	Module Perl Curses::Widgets
-Summary(it):	Modulo di Perl Curses::Widgets
-Summary(ja):	Curses::Widgets Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Curses::Widgets ÆŞ ¸ğÁÙ
-Summary(nb):	Perlmodul Curses::Widgets
-Summary(pl):	Modu³ Perla Curses::Widgets
-Summary(pt):	Módulo de Perl Curses::Widgets
-Summary(pt_BR):	Módulo Perl Curses::Widgets
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Curses::Widgets
-Summary(sv):	Curses::Widgets Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Curses::Widgets
-Summary(zh_CN):	Curses::Widgets Perl Ä£¿é
+Summary:	Curses::Widgets - base widget class for use with the Curses::Application framework
+Summary(pl):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
 Version:	1.997
 Release:	2
