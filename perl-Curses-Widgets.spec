@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _with_demo - perform "make test" (it IS just demo!)
+%bcond_with	demo	# perform "make test" (it IS just demo!)
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Curses
 %define		pnam	Widgets
@@ -47,7 +48,7 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{?_with_demo:%{__make} test}
+%{?with_demo:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
