@@ -45,7 +45,7 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{?_with_demo:%{__make} test}
 
