@@ -43,7 +43,7 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 %setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{?_with_demo:%{__make} test}
 
