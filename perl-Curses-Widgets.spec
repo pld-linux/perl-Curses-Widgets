@@ -23,11 +23,11 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Curses::Widgets
 Summary(zh_CN):	Curses::Widgets Perl Ä£¿é
 Name:		perl-Curses-Widgets
 Version:	1.997
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Curses
 BuildArch:	noarch
@@ -43,7 +43,8 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 %setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{?_with_demo:%{__make} test}
 
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG CREDITS README
-%{perl_sitelib}/Curses/Widgets.pm
-%{perl_sitelib}/Curses/Widgets
+%{perl_vendorlib}/Curses/Widgets.pm
+%{perl_vendorlib}/Curses/Widgets
 %{_mandir}/man3/*
