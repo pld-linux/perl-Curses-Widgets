@@ -45,7 +45,7 @@ Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
 %build
 perl Makefile.PL
 %{__make}
-%{?_with_tests:%{__make} test}
+%{?_with_demo:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
