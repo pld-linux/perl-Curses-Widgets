@@ -9,7 +9,7 @@ Summary:	Curses::Widgets - base widget class for use with the Curses::Applicatio
 Summary(pl):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
 Version:	1.997
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
