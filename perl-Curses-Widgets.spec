@@ -3,8 +3,8 @@
 %bcond_with	demo	# perform "make test" (it IS just demo!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Curses
-%define	pnam	Widgets
+%define		pdir	Curses
+%define		pnam	Widgets
 Summary:	Curses::Widgets - base widget class for use with the Curses::Application framework
 Summary(pl):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
