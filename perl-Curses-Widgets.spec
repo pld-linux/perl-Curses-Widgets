@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Curses::Widgets
 Summary(it):	Modulo di Perl Curses::Widgets
 Summary(ja):	Curses::Widgets Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Curses::Widgets ÆŞ ¸ğÁÙ
-Summary(no):	Perlmodul Curses::Widgets
+Summary(nb):	Perlmodul Curses::Widgets
 Summary(pl):	Modu³ Perla Curses::Widgets
 Summary(pt):	Módulo de Perl Curses::Widgets
 Summary(pt_BR):	Módulo Perl Curses::Widgets
