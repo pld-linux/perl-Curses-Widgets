@@ -23,11 +23,11 @@ Summary(uk):	Модуль для Perl Curses::Widgets
 Summary(zh_CN):	Curses::Widgets Perl дё©И
 Name:		perl-Curses-Widgets
 Version:	1.997
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Curses
 BuildArch:	noarch
