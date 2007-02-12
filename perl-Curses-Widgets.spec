@@ -6,7 +6,7 @@
 %define		pdir	Curses
 %define		pnam	Widgets
 Summary:	Curses::Widgets - base widget class for use with the Curses::Application framework
-Summary(pl):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
+Summary(pl.UTF-8):   Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
 Version:	1.997
 Release:	4
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 High level access to basic Curses widgets and related functions.
 
-%description -l pl
-Modu³ ten udostêpnia kontrolki bazuj±ce na bibliotece Curses.
+%description -l pl.UTF-8
+ModuÅ‚ ten udostÄ™pnia kontrolki bazujÄ…ce na bibliotece Curses.
 
 %prep
 %setup -q -n %{pdir}%{pnam}-%{version}
