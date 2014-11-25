@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	demo	# perform "make test" (it IS just demo!)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Curses
 %define		pnam	Widgets
+%include	/usr/lib/rpm/macros.perl
 Summary:	Curses::Widgets - base widget class for use with the Curses::Application framework
 Summary(pl.UTF-8):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
@@ -14,9 +14,10 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	142b14bb761f579f98b4266405f06f8a
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Curses-Widgets/
 BuildRequires:	perl-Curses
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
