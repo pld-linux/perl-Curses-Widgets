@@ -4,7 +4,6 @@
 
 %define		pdir	Curses
 %define		pnam	Widgets
-%include	/usr/lib/rpm/macros.perl
 Summary:	Curses::Widgets - base widget class for use with the Curses::Application framework
 Summary(pl.UTF-8):	Curses::Widgets - podstawowa klasa kontrolek do wykorzystania w szkielecie Curses::Application
 Name:		perl-Curses-Widgets
